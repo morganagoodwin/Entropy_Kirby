@@ -1,0 +1,125 @@
+body {
+    background-image: url("https://us.123rf.com/450wm/nechayka/nechayka2001/nechayka200100070/137234681-star-sky-seamless-pattern-universe-night-background-galaxy-repeated-design.jpg");
+   
+}
+
+img{
+    position: relative;
+    margin-left: 0.5in;
+    margin-bottom: -0.2in;
+}
+.text {
+    margin-top: 1.6in;
+    text-align: center;
+    background-color: #fff86e;
+}
+
+.backText {
+    margin-top: 0.7in;
+    text-align: center;
+}
+
+.selected {
+    transform: rotateY(180deg);
+  }
+
+  .card {
+    color: aliceblue;
+    position: relative;
+    transition: all 0.4s linear;
+    transform-style: preserve-3d;
+    margin: 15px;
+  }
+
+  .grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card,
+  .back,
+  .front {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 0.3in;
+    margin-top: 0.2in;
+  }
+
+  .back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+    z-index: 2;
+    
+    background-size: 190px;
+    background-color: rgb(28, 7, 121);
+    color: black;
+    background-repeat: round;
+    
+    
+  }
+
+  .back {
+    transform: rotateY(180deg);
+    background-color:rgb(30, 13, 106);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white
+  }
+
+  .bigGrid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+  }
+  .bigCard{
+    color: aliceblue;
+    position: relative;
+    transition: all 0.4s linear;
+    transform-style: preserve-3d;
+    margin:41px;
+  }
+
+  .bigFront{
+    z-index: 2;
+    background-image: url(https://cdn.pixabay.com/photo/2016/07/23/13/18/pokemon-1536847_960_720.png);
+    background-size: 380px;
+    background-color: white;
+    color: black;
+    background-repeat:round;
+  }
+
+  .bigBack{
+    transform: rotateY(180deg);
+    background-color: #ffffff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: black;
+  }
+  .bigBack,
+  .bigFront {
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  .bigCard,
+  .bigBack,
+  .bigFront {
+    height: 300px;
+    width: 250px;
+  }
+  .bigText {
+    margin-top: 3.16in;
+    text-align: center;
+    background-color: #fff86e;
+  }
